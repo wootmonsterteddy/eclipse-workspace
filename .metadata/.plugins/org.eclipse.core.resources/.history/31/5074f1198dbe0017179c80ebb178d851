@@ -1,0 +1,37 @@
+/*
+ * test.c
+ *
+ *  Created on: 31 okt. 2017
+ *      Author: Erik
+ */
+
+#include <stdio.h>
+
+int main(void)
+{
+	struct list
+	{
+		unsigned int val;
+		struct list *next;
+	};
+
+	struct list e1,e2,e3,e4,e5;
+	struct list *ptr = &e1;
+
+	e1.val = 1;
+	e2.val = 2;
+	e3.val = 3;
+	e4.val = 4;
+	e5.val = 5;
+	e1.next = &e2;
+	e2.next = &e3;
+	e3.next = &e4;
+	e4.next = &e5;
+	e5.next = 0;
+
+	while(*tr)
+	{
+		printf("%u\n",ptr->val);
+		ptr = ptr->next;
+	}
+}

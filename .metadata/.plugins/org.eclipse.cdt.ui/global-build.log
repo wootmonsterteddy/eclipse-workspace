@@ -1,0 +1,4 @@
+22:56:52 **** Incremental Build of configuration Debug for project sort ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o sort.o "..\\sort.c" 
+gcc -o sort.exe sort.o 
