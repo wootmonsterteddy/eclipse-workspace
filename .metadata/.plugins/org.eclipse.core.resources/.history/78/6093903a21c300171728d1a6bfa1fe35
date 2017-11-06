@@ -48,11 +48,11 @@ int main(void)
 	output = fopen("sort.txt","r+");
 
 	fgets(buffer,255,output);
+	unsigned int current = atoi(buffer), next = atoi(fgets(buffer,255,output));
 
 	while(buffer != EOF)
 	{
 		unsigned int current = atoi(buffer), next = atoi(fgets(buffer,255,output));
-
 
 
 		next = atoi(fgets(buffer,255,output));

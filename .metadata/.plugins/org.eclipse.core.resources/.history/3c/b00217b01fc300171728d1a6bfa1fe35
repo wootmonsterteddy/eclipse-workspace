@@ -45,18 +45,12 @@ int main(void)
 	char buffer[256] = {0};
 	unsigned int ceiling = amount - 1;
 
-	output = fopen("sort.txt","r+");
+	output = fopen("sort.txt","r");
 
-	fgets(buffer,255,output);
-
-	while(buffer != EOF)
+	do
 	{
-		unsigned int current = atoi(buffer), next = atoi(fgets(buffer,255,output));
 
-
-
-		next = atoi(fgets(buffer,255,output));
-	}
+	} while(buffer != EOF)
 
 	return 0;
 }
