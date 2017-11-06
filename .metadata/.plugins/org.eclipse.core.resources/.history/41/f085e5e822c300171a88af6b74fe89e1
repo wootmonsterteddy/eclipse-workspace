@@ -37,12 +37,17 @@ int main(void)
 		}
 	}
 	fclose(output);
-	printf("Random file prepared, proceed?\n");
+	printf("File prepared, proceed?\n");
 	getchar();
 
-	//Begin sort
+		//Begin sort
+	//Move to array
+	char buffer[256] = {0};
+	unsigned int ceiling = amount - 1;
+
+
+
 
 
 	return 0;
 }
-

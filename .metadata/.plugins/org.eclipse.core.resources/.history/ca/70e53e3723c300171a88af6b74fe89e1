@@ -41,8 +41,14 @@ int main(void)
 	getchar();
 
 	//Begin sort
+		//Move to array
+
+	char buffer[256] = {0};
+	unsigned int ceiling = amount - 1;
+
+
+
 
 
 	return 0;
 }
-

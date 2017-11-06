@@ -43,9 +43,8 @@ int main(void)
 	//Begin sort
 
 	char buffer[256] = {0};
+	unsigned int ceiling = amount - 1;
 
-	FILE *
-
+	//Move to array
 	return 0;
 }
-

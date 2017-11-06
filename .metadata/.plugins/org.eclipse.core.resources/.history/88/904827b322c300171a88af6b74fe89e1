@@ -37,21 +37,26 @@ int main(void)
 		}
 	}
 	fclose(output);
-	printf("Random file prepared, proceed?\n");
-	char c = scanf("%c",&c); //LOL
+	printf("File prepared, proceed?\n");
+	getchar();
 
 	//Begin sort
 
-	FILE *read = fopen("sort.txt","w");
-	char temp[255] = {0};
+	char buffer[256] = {0};
+	unsigned int ceiling = amount - 1;
 
-	fgets(temp,255,read);
-	printf("%u\n",atoi(temp));
+	output = fopen("sort.txt","r+");
 
-	c = scanf("%c",&c);
+	fgets(buffer,255,output);
 
-	fclose(read);
+	while(buffer != EOF)
+	{
+		unsigned int current = atoi(buffer), next = atoi(fgets(buffer,255,output));
+
+
+
+		next = atoi(fgets(buffer,255,output));
+	}
 
 	return 0;
 }
-

@@ -41,9 +41,18 @@ int main(void)
 	getchar();
 
 	//Begin sort
+		//Move to array
 
+	output = fopen("sort.txt","r+");
 	char buffer[256] = {0};
+	char tempArray[10][amount];
+	unsigned int ceiling = amount - 1;
+
+	while((fgets(buffer,255,output)))
+
+
+
+
 
 	return 0;
 }
-
