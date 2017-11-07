@@ -19,21 +19,21 @@ int main(void)
 {
 	//Prepare random integers
 	srand(time(NULL));
-	unsigned int randLimit = 1000;
-	unsigned int amount = rand() % randLimit;
+	unsigned long randLimit = 100000;
+	unsigned long amount = rand() % randLimit;
 
 	FILE *output = fopen("sort.txt","w");
 
-	for(int i = 0; i < amount; i++)
+	for(unsigned long i = 0; i < amount; i++)
 	{
-		unsigned int r = rand() % randLimit;
+		unsigned long r = rand() % randLimit;
 		if(i < amount - 1)
 		{
-			fprintf(output,"%u\n",r);
+			fprintf(output,"%lu\n",r);
 		}
 		else if(i == amount - 1)
 		{
-			fprintf(output,"%u",r);
+			fprintf(output,"%lu",r);
 		}
 	}
 	fclose(output);
@@ -41,21 +41,58 @@ int main(void)
 	getchar();
 
 	//Begin sort
-		//Move to array
-
-	output = fopen("sort.txt","r+");
+	output = fopen("sort.txt","r");
 	char buffer[256] = {0};
-	unsigned int tempArray[10][amount];
-	unsigned int ceiling = amount - 1;
+	unsigned long tempArray[amount];
+	unsigned long ceiling = amount, i = 0;
 
-	while((fgets(buffer,255,output)) != EOF)
+	//Move to array
+	while((fgets(buffer,255,output)) != NULL)
 	{
-		tempArray[]
+		tempArray[i] = atoi(buffer);
+		i++;
 	}
 
+	fclose(output);
 
+	//Sort array
+	while(ceiling > 1)
+	{
+		unsigned long current = tempArray[0], pos = 0;
+		for(i = 1; i < ceiling; i++)
+		{
+			if(current < tempArray[i])
+			{
+				current = tempArray[i];
+				pos = i;
+			}
+			if(i == ceiling - 1)
+			{
+				tempArray[pos] = tempArray[ceiling-1];
+				tempArray[ceiling-1] = current;
+			}
+		}
+		ceiling--;
+	}
 
+	//Write array to original file
+	output = fopen("sort.txt","w");
+	for(i = 0; i < amount; i++)
+	{
+		if(i < amount - 1)
+		{
+			fprintf(output,"%lu\n",tempArray[i]);
+		}
+		else if(i == amount - 1)
+		{
+			fprintf(output,"%lu",tempArray[i]);
+		}
+	}
 
+	fclose(output);
+
+	printf("Done.\n");
+	getchar();
 
 	return 0;
 }
