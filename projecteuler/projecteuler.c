@@ -94,7 +94,7 @@ unsigned long long sum(const unsigned long long *x)
 
 int main(void)
 {
-	unsigned long long factors[1000] = {0}, i = 2, number = 600851475143;
+	unsigned long long factors[1000] = {0}, i = 2, number = 9009;
 	unsigned int counter = 0;
 
 	while(sum(factors) < number)
@@ -130,8 +130,6 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 int main(void)
 {
-
-
 
 	return 0;
 }

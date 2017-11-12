@@ -1,1 +1,97 @@
+20:03:07 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'isPalin':
+..\projecteuler.c:134:30: warning: unused variable 'new' [-Wunused-variable]
+  unsigned long x = original, new;
+                              ^~~
+gcc -o projecteuler.exe projecteuler.o 
 Info: Nothing to build for projecteuler
+20:03:24 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'isPalin':
+..\projecteuler.c:134:30: warning: unused variable 'new' [-Wunused-variable]
+  unsigned long x = original, new;
+                              ^~~
+gcc -o projecteuler.exe projecteuler.o 
+20:03:58 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:05:43 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:05:47 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:09:37 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'isPalin':
+..\projecteuler.c:148:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   temp[i] = x%10;
+           ^
+..\projecteuler.c:152:10: warning: passing argument 1 of 'atoi' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(atoi(temp) == original)
+          ^~~~
+In file included from ..\projecteuler.c:9:0:
+c:\mingw\include\stdlib.h:335:38: note: expected 'const char *' but argument is of type 'char **'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int atoi (const char *);
+                                      ^~~~
+gcc -o projecteuler.exe projecteuler.o 
+20:09:45 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'isPalin':
+..\projecteuler.c:148:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   temp[i] = x%10;
+           ^
+gcc -o projecteuler.exe projecteuler.o 
+20:10:24 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:10:39 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:10:49 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:11:05 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:11:13 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:11:33 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:12:40 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:17:38 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:18:12 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+Info: Nothing to build for projecteuler
+20:20:15 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
+20:23:01 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
