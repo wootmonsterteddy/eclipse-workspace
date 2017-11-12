@@ -1,1 +1,40 @@
-Info: Nothing to build for integral
+00:53:57 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'main':
+..\projecteuler.c:65:12: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'long long unsigned int' [-Wformat=]
+   printf("%u\n",now);
+            ^
+..\projecteuler.c:57:52: warning: unused variable 'ceiling' [-Wunused-variable]
+  unsigned long long before = 0, now = 1, temp = 0, ceiling = 10;
+                                                    ^~~~~~~
+gcc -o projecteuler.exe projecteuler.o 
+00:55:18 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'main':
+..\projecteuler.c:71:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("%llu\n",sum);
+            ^
+..\projecteuler.c:71:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("%llu\n",sum);
+         ^~~~~~~~
+..\projecteuler.c:57:61: warning: unused variable 'ceiling' [-Wunused-variable]
+  unsigned long long before = 0, now = 1, temp = 0, sum = 0, ceiling = 10;
+                                                             ^~~~~~~
+gcc -o projecteuler.exe projecteuler.o 
+00:57:19 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+..\projecteuler.c: In function 'main':
+..\projecteuler.c:71:12: warning: unknown conversion type character 'l' in format [-Wformat=]
+  printf("%llu\n",sum);
+            ^
+..\projecteuler.c:71:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("%llu\n",sum);
+         ^~~~~~~~
+gcc -o projecteuler.exe projecteuler.o 
+00:57:46 **** Incremental Build of configuration Debug for project projecteuler ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o projecteuler.o "..\\projecteuler.c" 
+gcc -o projecteuler.exe projecteuler.o 
