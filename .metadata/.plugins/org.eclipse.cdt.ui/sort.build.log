@@ -1,14 +1,7 @@
-19:23:26 **** Incremental Build of configuration Debug for project sort ****
+18:03:20 **** Incremental Build of configuration Debug for project sort ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o sort.o "..\\sort.c" 
-..\sort.c: In function 'main':
-..\sort.c:50:35: warning: comparison between pointer and integer
-  while((fgets(buffer,255,output)) != EOF)
-                                   ^~
-..\sort.c:46:15: warning: unused variable 'ceiling' [-Wunused-variable]
-  unsigned int ceiling = amount - 1;
-               ^~~~~~~
 gcc -o sort.exe sort.o 
 
-19:23:27 Build Finished (took 357ms)
+18:03:21 Build Finished (took 1s.112ms)
 
