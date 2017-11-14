@@ -127,10 +127,34 @@ Largest palindrome product
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 Find the largest palindrome made from the product of two 3-digit numbers.
 */
+bool isPalin(unsigned long input)
+{
+	bool result = 0;
+	unsigned long original = input;
+	int i = 1, length = 0;
+	while(input/(10*i)>1)
+	{
+		length++;
+		i++;
+	}
+	char temp[length];
+	for(i = 0; i < length; i++)
+	{
+		temp[i] = input%10 + '0';
+		input /= 10;
+	}
+	if(atol(temp) == original)
+	{
+		result = 1;
+	}
+	return result;
+}
 
 int main(void)
 {
+	unsigned long a = 9009;
 
+	printf("%i",isPalin(a));
 	return 0;
 }
 
