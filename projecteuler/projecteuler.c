@@ -121,24 +121,25 @@ int main(void)
 
 #endif
 
-#if 1
+#if 0
 /*Problem 4
 Largest palindrome product
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 Find the largest palindrome made from the product of two 3-digit numbers.
 */
-bool isPalin(unsigned long input)
+bool isPalindrome(const unsigned long original)
 {
 	bool result = 0;
-	unsigned long original = input;
-	int i = 1, length = 0;
-	while(input/(10*i)>1)
+	unsigned long input = original;
+	int length = 0;
+	while(input > 1)
 	{
 		length++;
-		i++;
+		input /= 10;
 	}
 	char temp[length];
-	for(i = 0; i < length; i++)
+	input = original;
+	for(int i = 0; i < length; i++)
 	{
 		temp[i] = input%10 + '0';
 		input /= 10;
@@ -152,9 +153,90 @@ bool isPalin(unsigned long input)
 
 int main(void)
 {
-	unsigned long a = 9009;
+	unsigned long temp[2284] = {0};
+	unsigned int counter = 0;
 
-	printf("%i",isPalin(a));
+	for(unsigned long i = 100; i < 1000; i++)
+	{
+		for(unsigned long j = 100; j < 1000; j++)
+		{
+			if(isPalindrome(i*j) == 1)
+			{
+				temp[counter] = i*j;
+				counter++;
+			}
+		}
+	}
+
+	unsigned long highest = temp[0];
+
+	for(int i = 1; i < counter; i++)
+	{
+		if(temp[i] > highest)
+		{
+			highest = temp[i];
+		}
+	}
+
+	printf("highest = %lu\n",highest);
+}
+
+#endif
+
+#if 0
+/*Problem 5
+Smallest multiple
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+*/
+
+int main(void)
+{
+	int lower = 1, upper = 20;
+	unsigned long n = 10;
+
+	while(1)
+	{
+		for(int i = lower; i <= upper; i++)
+		{
+			if(n%i != 0)
+			{
+				break;
+			}
+			else if(i == upper)
+			{
+				printf("number is = %lu\n",n);
+				return 0;
+			}
+		}
+		n++;
+	}
+
+	return 0;
+}
+
+#endif
+
+#if 1
+/*Problem 6
+Sum square difference
+The sum of the squares of the first ten natural numbers is,
+
+1^2 + 2^2 + ... + 10^2 = 385
+
+The square of the sum of the first ten natural numbers is,
+
+(1 + 2 + ... + 10)^2 = 55^2 = 3025
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+*/
+
+int main(void)
+{
+
+
 	return 0;
 }
 
