@@ -17,6 +17,6 @@
 
 int main(void)
 {
-
+	printf("%lu\n",(unsigned long)sqrt(10));
 	return 0;
 }
