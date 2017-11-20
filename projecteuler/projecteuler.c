@@ -287,12 +287,68 @@ int main(void)
 }
 #endif
 
-#if 1
+#if 0
 /*Problem 8
 Largest product in a series
 The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 (se https://projecteuler.net/problem=8)
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+*/
+
+int main(void)
+{
+	FILE *input = fopen("problem8.txt","r");
+	int number[1000];
+	unsigned long long highest = 1, temp = 0;
+	char c;
+
+	if(input == NULL)
+	{
+		printf("Could not open file.\n");
+		return 1;
+	}
+
+	for(int i = 0; i < 1000; i++)
+	{
+		c = getc(input) - '0';
+		number[i] = c;
+	}
+	//File moved to array.
+
+	for(int i = 0; i < 987; i++)
+	{
+		for(int j = 0; j < 13; j++)
+		{
+			if(j == 0)
+			{
+				temp = number[i];
+				continue;
+			}
+			temp *= number[i+j];
+		}
+		if(temp>highest)
+		{
+			highest = temp;
+		}
+	}
+
+	printf("%llu",highest);
+	fclose(input);
+	return 0;
+}
+#endif
+
+#if 1
+/*Problem 9
+Special Pythagorean triplet
+
+A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
+a^2 + b^2 = c^2
+
+For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
+
+There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+Find the product abc.
 */
 
 int main(void)
